@@ -31,7 +31,7 @@ var args = require('nomnom').opts({
 var data = '';
 
 function finish() {
-	var packed_data = packer.pack(data, args.base62, args.shrink, args.privates) + '\n';
+	var packed_data = packer.pack(data, args.base62, args.shrink, args.privates);
 	if (args.output_file) {
 		fs.writeFile(args.output_file, packed_data, function(error) {
 			if (error) {
