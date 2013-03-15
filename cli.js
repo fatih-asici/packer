@@ -18,6 +18,7 @@ var args = require('nomnom').opts({
     },
     shrink: {
 		abbr: 's',
+		flag: true,
 		help: 'Shrink variables'
 	}
 }).parseArgs();
