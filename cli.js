@@ -20,13 +20,18 @@ var args = require('nomnom').opts({
 		abbr: 's',
 		flag: true,
 		help: 'Shrink variables'
+	},
+	privates: {
+		abbr: 'p',
+		flag: true,
+		help: 'Obfuscate private identifiers'
 	}
 }).parseArgs();
 
 var data = '';
 
 function finish() {
-	var packed_data = packer.pack(data, args.base62, args.shrink) + '\n';
+	var packed_data = packer.pack(data, args.base62, args.shrink, args.privates) + '\n';
 	if (args.output_file) {
 		fs.writeFile(args.output_file, packed_data, function(error) {
 			if (error) {

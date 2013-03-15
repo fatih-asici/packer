@@ -18,6 +18,8 @@ var base2 = {
   namespace: ""
 };
 
+global.base2 = base2;
+
 new function(_no_shrink_) { ///////////////  BEGIN: CLOSURE  ///////////////
 
 // =========================================================================

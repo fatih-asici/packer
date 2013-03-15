@@ -5,6 +5,10 @@
 
 // timestamp: Wed, 23 Sep 2009 19:38:57
 
+require("./base2.js");
+
+var base2 = global.base2;
+
 new function() { ///////////////  BEGIN: CLOSURE  ///////////////
 
 new base2.Package(this, {
