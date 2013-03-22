@@ -135,6 +135,8 @@ var Privates = Encoder.extend({
 }, {
   IGNORE: {
     CONDITIONAL: IGNORE,
+    STRING1: IGNORE,
+    STRING2: IGNORE,
     "(OPERATOR)(REGEXP)": IGNORE
   },
   
